@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = { btcEur: [] };
+  }
+
+  async componentDidMount() {
+    try {
+      const response = await fetch(`https://api.coindesk.com/v1/bpi/currentprice/EUR`);
+      const json = await response.json();
+      const btcEur = json.bpi.EUR.rate.slice(0, -5) + ' €'
+      this.setState({ btcEur: btcEur });
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  render() {
+    return (
+      <div className="app">
+        BTC = {this.state.btcEur}
+      </div>
+    );
+  }
 }
 
 export default App;
