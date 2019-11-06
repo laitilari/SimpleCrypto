@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simplecrypto/static/css/main.ef963a8f.chunk.css",
+    "main.js": "/simplecrypto/static/js/main.86dd48a8.chunk.js",
+    "main.js.map": "/simplecrypto/static/js/main.86dd48a8.chunk.js.map",
+    "runtime-main.js": "/simplecrypto/static/js/runtime-main.8139cde3.js",
+    "runtime-main.js.map": "/simplecrypto/static/js/runtime-main.8139cde3.js.map",
+    "static/js/2.9f4d3b99.chunk.js": "/simplecrypto/static/js/2.9f4d3b99.chunk.js",
+    "static/js/2.9f4d3b99.chunk.js.map": "/simplecrypto/static/js/2.9f4d3b99.chunk.js.map",
+    "index.html": "/simplecrypto/index.html",
+    "precache-manifest.d535052527168ca34cf6e44fc4ca44d7.js": "/simplecrypto/precache-manifest.d535052527168ca34cf6e44fc4ca44d7.js",
+    "service-worker.js": "/simplecrypto/service-worker.js",
+    "static/css/main.ef963a8f.chunk.css.map": "/simplecrypto/static/css/main.ef963a8f.chunk.css.map",
+    "static/media/btc.svg": "/simplecrypto/static/media/btc.d7876d48.svg",
+    "static/media/fsn.png": "/simplecrypto/static/media/fsn.1e38795c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8139cde3.js",
+    "static/js/2.9f4d3b99.chunk.js",
+    "static/css/main.ef963a8f.chunk.css",
+    "static/js/main.86dd48a8.chunk.js"
+  ]
+}
