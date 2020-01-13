@@ -44,7 +44,6 @@ class App extends Component {
     const response = await fetch(`https://api.coingecko.com/api/v3/coins/list`);
     const text = await response.text();
     const json = JSON.parse(text);
-    console.log(json)
     return json
   }
 
