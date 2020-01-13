@@ -53,6 +53,9 @@ class App extends Component {
       <div className="app">
         <div className="container">
           <div>
+            <img className="btc-logo" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />  
+          </div>
+          <div>
             <img className="btc-logo"
               src={require("./images/btc.svg")}
               alt="bitcoin logo"
