@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc6a9f0fc3a16339d0ab80ab622b3aa6",
+    "revision": "4647653033a7bddda7f659e556411c78",
     "url": "/SimpleCrypto/index.html"
   },
   {
-    "revision": "06651ca95ed6914f21be",
-    "url": "/SimpleCrypto/static/css/main.1909d05d.chunk.css"
+    "revision": "ba5926c051c7707421ca",
+    "url": "/SimpleCrypto/static/css/main.943e49ac.chunk.css"
   },
   {
     "revision": "22ed07cb4dc20e51ec19",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SimpleCrypto/static/js/2.ab2e0c55.chunk.js.LICENSE"
   },
   {
-    "revision": "06651ca95ed6914f21be",
-    "url": "/SimpleCrypto/static/js/main.deb23176.chunk.js"
+    "revision": "ba5926c051c7707421ca",
+    "url": "/SimpleCrypto/static/js/main.ee488d0b.chunk.js"
   },
   {
     "revision": "963e6a9b4bec2e9bf9aa",
