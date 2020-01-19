@@ -50,7 +50,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div>
+        <div className="fear-greed-div">
             <img className="fear-greed" src="https://alternative.me/crypto/fear-and-greed-index.png" alt="Latest Crypto Fear & Greed Index" />  
           </div>
         <div className="container">

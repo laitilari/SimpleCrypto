@@ -23,10 +23,15 @@
   }
 }
 
-.fear-greed {
-  height: 20rem;
-  width: 20rem;
-}
+.fear-greed-div {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  .fear-greed {
+    height: 20rem;
+    width: 20rem;
+  }
 
+}
 
 
