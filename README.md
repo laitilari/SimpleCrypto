@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just an app to simply check the price of a few select cryptos.
 
 ### `npm start`
 
