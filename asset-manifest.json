@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/SimpleCrypto/static/css/main.943e49ac.chunk.css",
-    "main.js": "/SimpleCrypto/static/js/main.ee488d0b.chunk.js",
-    "main.js.map": "/SimpleCrypto/static/js/main.ee488d0b.chunk.js.map",
+    "main.js": "/SimpleCrypto/static/js/main.aa4cec21.chunk.js",
+    "main.js.map": "/SimpleCrypto/static/js/main.aa4cec21.chunk.js.map",
     "runtime-main.js": "/SimpleCrypto/static/js/runtime-main.22181b4e.js",
     "runtime-main.js.map": "/SimpleCrypto/static/js/runtime-main.22181b4e.js.map",
     "static/js/2.ab2e0c55.chunk.js": "/SimpleCrypto/static/js/2.ab2e0c55.chunk.js",
     "static/js/2.ab2e0c55.chunk.js.map": "/SimpleCrypto/static/js/2.ab2e0c55.chunk.js.map",
     "index.html": "/SimpleCrypto/index.html",
-    "precache-manifest.bb99608f1d9e597164bd4ad6dce4597a.js": "/SimpleCrypto/precache-manifest.bb99608f1d9e597164bd4ad6dce4597a.js",
+    "precache-manifest.43ce01e25a88a9a70954f442490d430a.js": "/SimpleCrypto/precache-manifest.43ce01e25a88a9a70954f442490d430a.js",
     "service-worker.js": "/SimpleCrypto/service-worker.js",
     "static/css/main.943e49ac.chunk.css.map": "/SimpleCrypto/static/css/main.943e49ac.chunk.css.map",
     "static/js/2.ab2e0c55.chunk.js.LICENSE": "/SimpleCrypto/static/js/2.ab2e0c55.chunk.js.LICENSE",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.22181b4e.js",
     "static/js/2.ab2e0c55.chunk.js",
     "static/css/main.943e49ac.chunk.css",
-    "static/js/main.ee488d0b.chunk.js"
+    "static/js/main.aa4cec21.chunk.js"
   ]
 }
