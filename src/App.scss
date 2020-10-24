@@ -3,35 +3,14 @@
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  @media only screen and (max-width: 600px) {
-      flex-direction: column;
-  }
-}
-
-.fsn-logo, .hbar-logo, .btc-logo {
-  height: 7.5rem;
-  width: 7.5rem;
-  border-radius: 50%;
-  &.hbar-logo {
-    border: solid 1px grey
-  }
-}
-
-.fear-greed-div {
-  background-color: #282c34;
-  display: flex;
   justify-content: center;
-  .fear-greed {
-    height: 20rem;
-    width: 20rem;
-  }
-
+  align-items: center;
+  font-size: 4rem;
+  color: white;
 }
 
-
+.btc-logo {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+}

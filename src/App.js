@@ -1,56 +1,32 @@
-import React, { Component } from 'react'
-import './App.scss'
-import * as Round from '../node_modules/round-to'
+import React, { Component } from "react";
+import "./App.scss";
+import * as Round from "../node_modules/round-to";
 
 class App extends Component {
   constructor() {
-    super()
-    this.state = { btcEur: '', fsnEur: '' }
+    super();
+    this.state = { btcUSD: "" };
   }
 
   async componentDidMount() {
     try {
       const response = await fetch(
-        `https://api.coindesk.com/v1/bpi/currentprice/EUR`
-      )
-      const json = await response.json()
-      const btcEur =
-        Round(Number(json.bpi.EUR.rate.split(',').join('')), 2) + ' €'
-      this.setState({ btcEur: btcEur })
+        `https://api.coindesk.com/v1/bpi/currentprice/USD`
+      );
+      const json = await response.json();
+      const btcUSD =
+        Round(Number(json.bpi.USD.rate.split(",").join("")), 2) + " $";
+      this.setState({ btcUSD: btcUSD });
     } catch (error) {
-      console.log(error)
-    }
-
-    try {
-      const response = await fetch(
-        `https://api.coingecko.com/api/v3/simple/price?ids=fsn&vs_currencies=eur`
-      )
-      const text = await response.text()
-      const json = JSON.parse(text)
-      const fsnEur = Round(json.fsn.eur, 2) + ' €'
-      this.setState({ fsnEur: fsnEur })
-    } catch (error) {
-      console.log(error)
-    }
-
-    try {
-      const response = await fetch(
-        `https://api.coingecko.com/api/v3/simple/price?ids=hedera-hashgraph&vs_currencies=eur`
-      )
-      const text = await response.text()
-      const json = JSON.parse(text)
-      const hbarEur = Round(json['hedera-hashgraph'].eur, 4) + ' €'
-      this.setState({ hbarEur: hbarEur })
-    } catch (error) {
-      console.log(error)
+      console.log(error);
     }
   }
 
   async getGoinsList() {
-    const response = await fetch(`https://api.coingecko.com/api/v3/coins/list`)
-    const text = await response.text()
-    const json = JSON.parse(text)
-    return json
+    const response = await fetch(`https://api.coingecko.com/api/v3/coins/list`);
+    const text = await response.text();
+    const json = JSON.parse(text);
+    return json;
   }
 
   render() {
@@ -60,36 +36,20 @@ class App extends Component {
           <div>
             <img
               className="btc-logo"
-              src={require('./images/btc.svg')}
+              src={require("./images/btc.svg")}
               alt="bitcoin logo"
             />
-            <CryptoPrice crypto={this.state.btcEur} />
-          </div>
-          <div>
-            <img
-              className="fsn-logo"
-              src={require('./images/fsn.png')}
-              alt="fsn logo"
-            />
-            <CryptoPrice crypto={this.state.fsnEur} />
-          </div>
-          <div>
-            <img
-              className="hbar-logo"
-              src={require('./images/hbar.jpg')}
-              alt="hbar logo"
-            />
-            <CryptoPrice crypto={this.state.hbarEur} />
+            <CryptoPrice crypto={this.state.btcUSD} />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
 const CryptoPrice = (props) => {
-  const { crypto } = props
-  return <div>{crypto}</div>
-}
+  const { crypto } = props;
+  return <div>{crypto}</div>;
+};
 
-export default App
+export default App;
