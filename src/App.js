@@ -5,18 +5,18 @@ import * as Round from "../node_modules/round-to";
 class App extends Component {
   constructor() {
     super();
-    this.state = { btcUSD: "" };
+    this.state = { btcEur: "" };
   }
 
   async componentDidMount() {
     try {
       const response = await fetch(
-        `https://api.coindesk.com/v1/bpi/currentprice/USD`
+        `https://api.coindesk.com/v1/bpi/currentprice/EUR`
       );
       const json = await response.json();
-      const btcUSD =
-        Round(Number(json.bpi.USD.rate.split(",").join("")), 2) + " $";
-      this.setState({ btcUSD: btcUSD });
+      const btcEur =
+        Round(Number(json.bpi.EUR.rate.split(",").join("")), 2) + " €";
+      this.setState({ btcEur: btcEur });
     } catch (error) {
       console.log(error);
     }
@@ -39,7 +39,7 @@ class App extends Component {
               src={require("./images/btc.svg")}
               alt="bitcoin logo"
             />
-            <CryptoPrice crypto={this.state.btcUSD} />
+            <CryptoPrice crypto={this.state.btcEur} />
           </div>
         </div>
       </div>
